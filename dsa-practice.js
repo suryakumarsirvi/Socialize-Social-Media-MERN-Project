@@ -1,0 +1,5 @@
+// Remove duplicates
+function unique(arr) {
+  return [...new Set(arr)];
+}
+
