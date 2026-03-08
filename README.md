@@ -1,16 +1,124 @@
-# React + Vite
+# Social Media Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern full-stack social media application built with **React** and **Vite** that enables users to connect, share content, and communicate in real time.  
+The project focuses on scalable architecture, optimized media handling, and secure authentication.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+### Authentication
+- Secure user authentication with **Clerk**
+- Sign up and sign in functionality
+- User profile management
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Social Interaction
+- Real-time chat and messaging
+- Create and share posts (text and images)
+- Feed system for browsing content
 
-## Expanding the ESLint configuration
+### User Connections
+- Follow and unfollow users
+- Friend request management
+- User search and discovery
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Media Handling
+- Image upload and optimization using **ImageKit**
+- Fast and reliable media delivery
+
+### Background Processing
+- Background jobs and scheduled tasks using **Inngest**
+
+### Stories
+- Temporary story or status uploads
+
+---
+
+## Tech Stack
+
+### Frontend
+- React
+- Vite
+- Tailwind CSS
+
+### Services
+- Clerk – Authentication and user management
+- Inngest – Background job processing
+- ImageKit – Media storage and optimization
+
+---
+
+## Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Environment variables
+
+Create a `.env` file in the root directory and add the following variables:
+
+```
+VITE_CLERK_PUBLISHABLE_KEY=your_clerk_key
+VITE_IMAGEKIT_PUBLIC_KEY=your_imagekit_key
+VITE_IMAGEKIT_URL_ENDPOINT=your_imagekit_url
+```
+
+Add any additional keys required for backend services if applicable.
+
+### Run the development server
+
+```bash
+npm run dev
+```
+
+The application will run at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## Project Structure
+
+```
+src
+ ├── components
+ ├── pages
+ ├── hooks
+ ├── services
+ ├── utils
+ └── assets
+```
+
+---
+
+## Roadmap
+
+- Notifications system
+- Post reactions and comments
+- Advanced search filters
+- Improved mobile responsiveness
+- Push notifications
+
+---
+
+## Contributing
+
+Contributions are welcome. Fork the repository and submit a pull request with your improvements.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
